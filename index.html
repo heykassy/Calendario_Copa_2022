@@ -9,16 +9,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="count-down.css">
+    <link rel="stylesheet" href="color-button.css">
     <title>Calendário dos jogos da Copa</title>
 </head>
-<body>
+<body class="yellow">
     <div id="app">
         <header>
             <img src="./assets/logo.svg" alt="Logo do calendário dos jogos da Copa">
+            <ul id="count-down">
+                <li class="days"></li>
+                <li class="hours"></li>
+                <li class="minutes"></li>
+                <li class="seconds"></li>
+            </ul>
         </header>
         <main id="cards"></main>
     </div>
-
+    <!--button-->
+    <div id="container-floating">
+        <div id="yellow" class="nds" onclick="changePageColor('yellow')"><img class="reminder"></div>
+        
+        <div id="blue" class="nds" onclick="changePageColor('blue')"><img class="reminder"></div>
+        
+        <div id="green" class="nds" onclick="changePageColor('green')"></div>
+      
+        <div id="floating-button">
+          <img id="color-circle" src="./assets/color-circle.png" alt="Logo círculo de cor">
+        </div>
+      </div>
     <script src="main.js"></script>
+    <script src="count-down.js"></script>
 </body>
 </html>

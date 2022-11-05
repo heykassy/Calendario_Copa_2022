@@ -1,3 +1,7 @@
+function changePageColor(color) {
+    document.body.className = color 
+}
+
 function createGameMatch(team1, hour, team2) {
     return `
     <li>

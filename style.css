@@ -105,6 +105,7 @@ header {
 
 .card ul li:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .card ul li {
@@ -142,10 +143,16 @@ header img {
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     #cards {
         max-width: 670px;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1180px) {
+    #cards {
+        max-width: 1015px;
     }
 }
