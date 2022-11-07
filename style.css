@@ -38,9 +38,11 @@ body {
     padding-top: 52px;
 }
 
-header {
+#app header {
     margin-bottom: 63px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #cards {
@@ -115,6 +117,7 @@ header {
 }
 
 header img {
+    padding-bottom: 30px;
     opacity: 0;
     animation: appear2 1.5s forwards;
 }
@@ -127,7 +130,6 @@ footer p {
 }
 
 a {
-    text-decoration: none;
     color: #E1E1E6;
 }
 
@@ -153,6 +155,12 @@ a {
 }
 
 @media (min-width: 800px) {
+    #app header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
     #cards {
         max-width: 670px;
         flex-direction: row;
@@ -161,6 +169,7 @@ a {
 }
 
 @media (min-width: 1180px) {
+    
     #cards {
         max-width: 1015px;
     }
